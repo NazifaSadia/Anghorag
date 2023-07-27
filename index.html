@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
+        <!--Google Font Inter-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- External CSS -->
+        <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/style.css">
+        <title>Anghorag</title>
+    </head>
+
+    <body>
+
+        <!--header start-->
+        <div class="container">
+
+            <div class="row justify-content-start align-items-center">
+
+                <div class="col-3">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+
+                <div class="col-6">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-8">
+                                <div class="form-group has-search">
+                                    <i class="fa fa-search form-control-feedback"></i>
+                                    <input type="text" class="form-control border rounded-pill input_color" placeholder="Search for products...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-3">
+                    <div class="d-flex justify-content-end">
+                        <form class="d-flex" role="search">
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-user ms-4"></i><span class="fw-bold ms-2">Account</span>
+                            </div>
+                            <div class="d-flex mt-2 ms-3">
+                                <div class="vr h-75"></div>
+                            </div>
+                            <div>
+                                <a class="btn rounded-pill ms-3 text-white" id="cart_color" href="#" role="button"> <i class="fas fa-shopping-bag"></i><span class="ms-2">Cart (0)</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--header end-->
+
+        <!--category start-->
+        <section class="border-top border-bottom mt-2">
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-lg-3">
+                        <nav class="navbar navbar-expand-lg navbar-dark categories_bg_color py-0">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse" id="main_nav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown" id="myDropdown">
+                                            <a class="nav-link dropdown-toggle categories_dropdown_toggle" href="#" data-bs-toggle="dropdown" >
+                                                <i class="fas fa-bars categories_color"></i>
+                                                <span class="categories_color  ms-2">Categories</span>
+                                                <img class="down_arrow" src="images/d_arrow.svg">
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li> <a class="dropdown-item" href="#"> Health & Beauty &raquo; </a>
+                                                    <ul class="submenu dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Skin Care &raquo; </a>
+                                                            <ul class="submenu dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Face Wash</a></li>
+                                                                <li><a class="dropdown-item" href="#">Mask</a></li>
+                                                                <li><a class="dropdown-item" href="#">Serum</a></li>
+                                                                <li><a class="dropdown-item" href="#">Skin Toner</a></li>
+                                                                <li><a class="dropdown-item" href="#">Sun Screen</a></li>
+                                                                <li><a class="dropdown-item" href="#">Lip Bum</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Hair Care</a></li>
+                                                        <li><a class="dropdown-item" href="#">Bath & Body</a></li>
+                                                        <li><a class="dropdown-item" href="#">Fragrances</a></li>
+                                                        <li><a class="dropdown-item" href="#">Personal Care</a></li>
+                                                        <li><a class="dropdown-item" href="#">Hair Care</a></li>
+                                                        <li><a class="dropdown-item" href="#">Sexual Wellness</a></li>
+                                                    </ul></li>
+                                                <li> <a class="dropdown-item" href="#"> Electronics </a>
+                                                    
+                                                </li>
+                                                <li><a class="dropdown-item" href="#"> Skin Care </a></li>
+                                                <li><a class="dropdown-item" href="#"> Exercise Tools </a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- navbar-collapse.// -->
+                            </div>
+                            <!-- container-fluid.// -->
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-9 d-flex justify-content-end">
+                        <a class="btn rounded-pill ms-3 text-white d-flex justify-content-center align-items-center" id="offer_color" href="#" role="button">
+                            <span>Offers</span></a>
+                        <a class="btn rounded-pill ms-3 text-white d-flex justify-content-center align-items-center" id="seller_color" href="#" role="button">
+                            <span>Seller Picks</span></a>
+                        <a class="btn rounded-pill ms-3 text-white d-flex justify-content-center align-items-center" id="campaign_color" href="#" role="button">
+                            <span>Campaign</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--category end-->
+
+        <section class="banner_image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb-text pt-4">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Healthcare & Beauty</li>
+                                <li class="breadcrumb-item active" aria-current="page">Skin Care</li>
+                            </ol>
+                        </nav>
+                        <p class="banner_title pb-3">Skin Care Products</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- category & sort start-->
+        <div class="container">
+
+            <div class="row justify-content-end align-items-center">
+
+                <div class="col-2 d-flex justify-content-end">
+                    <select name="first" id="first" class="rounded-1 p-2">
+                        <option value="">Sort by Latest</option>
+                        <option value="latest">Latest</option>
+                        <option value="price_low">Price</option>
+                        <option value="price_high">Offer</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- category & sort end-->
+
+        <!--Card Section Start-->
+        <div class="container mt-4">
+            <div class="row justify-content-end">
+                <div class="col-3">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="collapsible border_collapse">Category</button>
+                            <div class="content">
+                                <input type="radio" id="sun_care" name="radio" value="Sun Care">
+                                <label class="collapse_label" for="sun_care">Sun Care</label><br>
+
+                                <input type="radio" id="night_care" name="radio" value="Night Care">
+                                <label class="collapse_label" for="night_care">Night Care</label><br>
+
+                                <input type="radio" id="moisturizers" name="radio" value="Moisturizers">
+                                <label class="collapse_label" for="moisturizers">Moisturizers</label><br>
+
+                                <input type="radio" id="eye_care" name="radio" value="Eye Care">
+                                <label class="collapse_label" for="eye_care">Eye Care</label><br>
+
+                                <input type="radio" id="masks" name="masks" value="Masks">
+                                <label class="collapse_label" for="javascript">Masks</label><br>
+
+                                <input type="radio" id="personal_care" name="radio" value="Personal Care">
+                                <label class="collapse_label" for="personal_care">Personal Care</label><br>
+
+                                <input type="radio" id="hair_care" name="radio" value="Hair Care">
+                                <label class="collapse_label" for="hair_care">Hair Care</label><br>
+
+                                <input type="radio" id="on_sale" name="radio" value="On Sale">
+                                <label class="collapse_label" for="on_sale">On Sale</label><br>
+
+                                <input type="radio" id="seller_picks" name="radio" value="Seller Picks">
+                                <label class="collapse_label" for="seller_picks">Seller Picks</label><br>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="collapsible border_collapse">Brand</button>
+                            <div class="content">
+                                <input type="radio" id="body_shop" name="radio" value="Body Shop">
+                                <label class="collapse_label" for="body_shop">The Body Shop</label><br>
+
+                                <input type="radio" id="nivea" name="radio" value="Nivea">
+                                <label class="collapse_label" for="nivea">Nivea</label><br>
+
+                                <input type="radio" id="skinfood" name="radio" value="Skinfood">
+                                <label class="collapse_label" for="skinfood">Skinfood</label><br>
+
+                                <input type="radio" id="neutrogena" name="radio" value="Neutrogena">
+                                <label class="collapse_label" for="neutrogena">Neutrogena</label><br>
+
+                                <input type="radio" id="cerave" name="radio" value="Cerave">
+                                <label class="collapse_label" for="cerave">Cerave</label><br>
+
+                                <input type="radio" id="olay" name="radio" value="Olay">
+                                <label class="collapse_label" for="olay">Olay</label><br>
+
+                                <input type="radio" id="dove" name="radio" value="Dove">
+                                <label class="collapse_label" for="dove">Dove</label><br>
+
+                                <input type="radio" id="neogen" name="radio" value="Neogen">
+                                <label class="collapse_label" for="neogen">Neogen</label><br>
+
+                                <input type="radio" id="loreal" name="radio" value="Loreal">
+                                <label class="collapse_label" for="loreal">Loreal</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="collapsible border_collapse">Colors</button>
+                            <div class="content">
+                                <input type="radio" id="red" name="radio" value="Red">
+                                <label class="collapse_label" for="red">Red</label><br>
+
+                                <input type="radio" id="pink" name="radio" value="Pink">
+                                <label class="collapse_label" for="pink">Pink</label><br>
+
+                                <input type="radio" id="white" name="radio" value="White">
+                                <label class="collapse_label" for="white">White</label><br>
+
+                                <input type="radio" id="black" name="radio" value="Black">
+                                <label class="collapse_label" for="black">Black</label><br>
+
+                                <input type="radio" id="aqua" name="radio" value="Aqua">
+                                <label class="collapse_label" for="aqua">Aqua</label><br>
+
+                                <input type="radio" id="green" name="radio" value="Green">
+                                <label class="collapse_label" for="green">Green</label><br>
+
+                                <input type="radio" id="blue" name="radio" value="Blue">
+                                <label class="collapse_label" for="blue">Blue</label><br>
+
+                                <input type="radio" id="orange" name="radio" value="Orange">
+                                <label class="collapse_label" for="orange">Orange</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="collapsible border_collapse">Size</button>
+                            <div class="content">
+                                <button type="button" class="rounded-1 size_btn border_pink"><span class="pink">150ml</span></button>
+                                <button type="button" class="rounded-1 size_btn border_gray"><span>200ml</span></button>
+                                <button type="button" class="rounded-1 size_btn border_gray"><span>250ml</span></button>
+                                <button type="button" class="rounded-1 size_btn border_gray"><span>300ml</span></button>
+                                <button type="button" class="rounded-1 size_btn border_gray"><span>350ml</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="collapsible border_collapse">Price</button>
+                            <div class="content">
+                                <div class="slider mt-4">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="range-min" min="0" max="10000" value="0" step="50">
+                                    <input type="range" class="range-max" min="0" max="10000" value="2000" step="50">
+                                </div>
+                                <div class="price-input d-flex justify-content-start">
+                                    <div class="field">
+                                        <span>Price: </span>
+                                        <span class="taka_sign">৳</span>
+                                        <input type="number" class="input-min" value="0">
+                                    </div>
+                                    <div class="field">
+                                        <span class="taka_sign">৳</span>
+                                        <input type="number" class="input-max" value="2000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <button type="button" class="rounded-1 reset_btn w-100"><span class="text-white">All Reset </span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-9">
+                    <div class="row justify-content-between gy-4">
+
+                        <!--Card-1 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="Sale">
+
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/1.png" alt="Product Image">
+                                </a>
+
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-1 End-->
+
+                        <!--Card-2 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/2.png" alt="Product Image">
+                                </a>
+
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-2 End-->
+
+                        <!--Card-3 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.png" alt="">
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag"></span>
+                                    <img class="cover_photo" src="images/products/3.png" alt="Product Image">
+                                </a>
+
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-3 End-->
+
+                        <!--Card-4 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/4.png" alt="Product Image">
+                                </a>
+
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-4 End-->
+
+                        <!--Card-5 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/5.png" alt="Product Image">
+                                </a>
+
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-5 End-->
+
+                        <!--Card-6 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.png" alt="">
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag"></span>
+                                    <img class="cover_photo" src="images/products/6.png" alt="Product Image">
+                                </a>
+
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-6 End-->
+
+                        <!--Card-7 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/7.png" alt="Product Image">
+                                </a>
+
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-7 End-->
+
+                        <!--Card-8 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.png" alt="">
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag"></span>
+                                    <img class="cover_photo" src="images/products/3.png" alt="Product Image">
+                                </a>
+
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-8 End-->
+
+                        <!--Card-9 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/2.png" alt="Product Image">
+                                </a>
+
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-9 End-->
+
+                        <!--Card-10 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="Sale">
+                        
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/1.png" alt="Product Image">
+                                </a>
+                        
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+                        
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+                        
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+                        
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+                        
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+                        
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-10 End-->
+                        
+                        <!--Card-11 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+                        
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/2.png" alt="Product Image">
+                                </a>
+                        
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+                        
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+                        
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+                        
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+                        
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+                        
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-11 End-->
+                        
+                        <!--Card-12 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.png" alt="">
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag"></span>
+                                    <img class="cover_photo" src="images/products/3.png" alt="Product Image">
+                                </a>
+                        
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+                        
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+                        
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+                        
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+                        
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+                        
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-12 End-->
+                        
+                        <!--Card-13 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+                        
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/4.png" alt="Product Image">
+                                </a>
+                        
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+                        
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+                        
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+                        
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+                        
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+                        
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-13 End-->
+                        
+                        <!--Card-14 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+                        
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/5.png" alt="Product Image">
+                                </a>
+                        
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+                        
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+                        
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+                        
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+                        
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+                        
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-14 End-->
+                        
+                        <!--Card-15 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.png" alt="">
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag"></span>
+                                    <img class="cover_photo" src="images/products/6.png" alt="Product Image">
+                                </a>
+                        
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+                        
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+                        
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+                        
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+                        
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+                        
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-15 End-->
+                        
+                        <!--Card-16 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+                        
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/7.png" alt="Product Image">
+                                </a>
+                        
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+                        
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+                        
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+                        
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+                        
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+                        
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-16 End-->
+                        
+                        <!--Card-17 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.png" alt="">
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag"></span>
+                                    <img class="cover_photo" src="images/products/3.png" alt="Product Image">
+                                </a>
+                        
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+                        
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+                        
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+                        
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+                        
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+                        
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-17 End-->
+                        
+                        <!--Card-18 start-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="product_box">
+                                <img class="sale_ribbon" src="images/Intersect.svg" alt="">
+                        
+                                <a href="#" class="cover_section">
+                                    <span class="category_tag text-white">Sale</span>
+                                    <img class="cover_photo" src="images/products/2.png" alt="Product Image">
+                                </a>
+                        
+                                <div class="product_description_section">
+                                    <a href="#">Nivea Soft Jar Moisturising Cream</a>
+                                    <div class="star">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/star_icon.png" alt="star_image">
+                                        <img src="images/start_50.png" alt="star_image">
+                                        <span class="">(15)</span>
+                                    </div>
+                        
+                                    <div class="price_section mt-2">
+                                        <p class="discount_price">৳
+                                            <b>1250.00</b>
+                                        </p>
+                        
+                                        <p class="original_price">৳
+                                            <b>2000</b>
+                                        </p>
+                        
+                                        <p class="discount_percentage">৳
+                                            <b>(-45%)</b>
+                                        </p>
+                        
+                                        <div class="cart_btn_section d-flex justify-content-between mt-2">
+                                            <button class="add_cart_btn pt-2">
+                                                <i class="fas fa-minus pink pe-2"></i>
+                                                <span class="vertical_border px-2">0</span>
+                                                <i class="fas fa-plus pink ps-2"></i>
+                                            </button>
+                        
+                                            <button class="add_btn d-flex align-items-center pt-2">
+                                                <img src="images/add_icon.png">
+                                                <span class="add_txt ms-2">Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card-18 End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Card Section End-->
+
+        <!--Card Load More Section Start-->
+        <div class="container mt-4">
+            <div class="row justify-content-end">
+                <div class="col-md-9 text-center">
+                    <button type="button" class="rounded-1 load_btn"><span class="light_purple">Load More</span></button>
+                </div>
+            </div>
+        </div>
+        <!--Card Load More Section End-->
+
+
+        <!-- Footer start-->
+        <section class="footer_background mt-5">
+            <div class="container">
+                <footer class="pt-5">
+                    <div class="row justify-content-between">
+
+                        <div class="col-md-4 mb-3">
+                            <img src="images/logo.png" alt="logo">
+                            <a href="#" class="nav-link p-0 text-white ms-1 mt-2"><i class="fas fa-mobile-alt"></i><span class="ms-2">13234-774464</span></a>
+                            <a href="#" class="nav-link p-0 text-white ms-1 mt-2"><i class="far fa-envelope"></i><span class="ms-2">anghorag@support.gmail.com</span></a>
+                            <h5 class=" py-2 my-3 text-white border-bottom w-75">Join Our social links</h5>
+                            <div class="d-flex">
+                                <a href="#" class="d-flex align-items-center text-decoration-none card footer_link_color social_icon"><i class="fab fa-facebook mt-1"></i></a>
+                                <a href="#" class="d-flex align-items-center text-decoration-none card footer_link_color ms-2 social_icon"><i class="fab fa-linkedin mt-1"></i></a>
+                            </div>
+                        </div>
+
+
+                        <div class="col col-md-8 mb-3">
+                            <div class="container">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-3 mb-3">
+                                        <div>
+                                            <h5 class="footer_link_color mt-3">Categories</h5>
+                                            <ul class="nav flex-column mt-4">
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Makeup</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Skin Care</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Bath and Body</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Hair Care</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Personal Care</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Sexual Wellness</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 mb-3">
+                                        <div>
+                                            <h5 class="footer_link_color mt-3">Quick Links</h5>
+                                            <ul class="nav flex-column mt-4">
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Offers</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Seller Picks</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Campaigns</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Hair Care</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 mb-3">
+                                        <div>
+                                            <h5 class="footer_link_color mt-3">Support</h5>
+                                            <ul class="nav flex-column mt-4">
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Return Policy</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Terms of Use</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacy Policy</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Shipping & Delivery</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-center py-4 mt-4 border-top text-white">
+                <p>Copyright @ 2023 Anghorag. All Right Reserved.</p>
+            </div>
+        </section>
+        <!-- Footer end-->
+
+
+        <!--JavaScript -->
+        <script src="bootstrap-5.2.3-dist/js/jquery-3.7.0.min.js"></script>
+        <script src="bootstrap-5.2.3-dist/js/popper.min.js"></script>
+        <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-5.2.3-dist/js/script.js"></script>
+
+    </body>
+</html>
