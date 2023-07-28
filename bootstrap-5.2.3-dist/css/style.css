@@ -235,6 +235,9 @@ Reusable Custom Classes
 .border_pink{
     border: 1px solid #F40F6F;
 }
+.border_lightpink {
+    border: 1px solid rgb(248, 111, 169);
+}
 /*=============================
 Reusable Custom Classes
 ==============================*/
